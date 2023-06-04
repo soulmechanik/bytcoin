@@ -1,0 +1,749 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,300;0,400;0,500;0,600;0,900;1,200;1,300;1,700&family=Roboto:ital@1&display=swap');
+
+
+/* color scheme */
+:root {
+    --color-1: #fff;
+    --color-2: rgba(255, 255, 255, 0.8);
+    --color-3: #000;
+    --color-4: #00002c;
+    --color-5: #000024;
+    --color-6: #00b7c5;
+    --color-7: #08d3d3;
+}
+/* color scheme */
+
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-padding-top: 7rem;
+    scroll-behavior: smooth;
+}
+
+
+ /* css reset */
+ *{
+    font-family: 'poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-transform: capitalize;
+    transition:all .2s ease-out ;
+}
+body{
+    overflow: hidden;
+}
+a{
+    text-decoration: none;
+}
+ /* css reset */
+
+
+
+
+
+
+/* everything hamburger */
+.header{
+    background: var(--color-4);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right:0 ;
+    z-index:1000;
+    box-shadow: 0 .5rem 1.5rem rgba(0, 0, 0, .1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+
+
+}
+
+.header .logo{
+    font-size: 13px;
+    color: var(--black);
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+    color: var(--color-1);
+}
+.header .logo img{
+    width: 60px;
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    
+    width: 80%;
+    align-items: center;
+   
+}
+
+.header .navbar a{
+    font-size: 1.5rem;
+    color: var(--color-1);
+    margin-left: 2rem;
+    text-decoration: none;
+
+}
+
+.header .navbar a:hover{
+    color: var(--color-2);
+}
+
+.header  button{
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    padding: 15px 25px;
+    background: linear-gradient(0deg, #ae2c86, #d0498d);
+    border-radius: 30px;
+    color: var(--color-1);
+    font-size: 13px;
+    font-weight: 700;
+
+}
+.header button i{
+    margin-left: 5px;
+    color: goldenrod;
+    font-size: 3rem;
+    
+}
+
+#menu-btn{
+font-size: 2.5rem;
+border-radius: .5rem;
+background:#eee ;
+
+padding: 1rem 1.5rem;
+cursor: pointer;
+display: none;
+}
+/* everything hamburger */
+
+section{
+    padding: 2rem 9% ;
+   
+}
+
+    .home{
+        background: var(--color-4);
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 1.5rem;
+        padding-top: 10rem;
+        width: 100%;
+        
+    }
+.home .image{
+    flex:1 1 45rem;
+    align-items: center;
+    justify-content: center;
+}
+.home .image img{
+width: 100% ;
+}
+.home .content{
+    flex:1 1 45rem;
+}
+.home .content h3{
+    font-size:5rem;
+    font-weight: 600;
+    color: var(--color-1);
+    line-height: 1.3;
+    margin-bottom: 1rem;
+}
+.home .content p{
+    font-size:1.8rem ;
+    color: var(--color-1);
+    line-height: 1.5;
+    padding: 1rem 0 ;
+    margin-bottom: 1rem;
+}
+
+.home .content button{
+    cursor:pointer;
+    padding: 15px 25px;
+    background: linear-gradient(0deg, #ae2c86, #d0498d);
+    border-radius: 30px;
+    color: var(--color-1);
+    font-size: 13px;
+    font-weight: 500;
+}
+
+.home .image img{
+width: 530px;
+animation: Earth 20s linear infinite;
+}
+
+@keyframes Earth{
+    0%{
+        transform:rotate(0deg);
+    }
+    100%{
+        transform:rotate(360deg);
+    }
+}
+
+
+.waves{
+    background: var(--color-5);
+
+}
+ .wavestexts{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+
+ }
+ .wavescontainer{
+    position: relative;
+    color: var(--color-1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+ }
+ 
+ .wavescontainer .waveimage{
+    flex:1 1 45rem;
+    
+}
+ .waveimage img{
+width: 100% ;
+}
+.wavestexts h1{
+    padding-top: 60px;
+    font-size: 30px;
+    margin-bottom: 30px;
+    position: relative;
+}
+
+.wavestexts h1::before{
+    content: "";
+    position: absolute;
+    width: 50px;
+    height: 3.5px;
+    background: var(--color-6);
+    bottom: -10px;
+    left: 100px;
+}
+.wavestexts p{
+    
+    max-width:500px ;
+
+}
+
+.wavescontainer .time{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    background-image: u
+}
+
+.wavescontainer .time span{
+    font-size: 40px;
+    font-weight: 900;
+    margin: 0px 25px;
+    color: var(--color-7);
+}
+
+
+.wavescontainer .time span h6{
+    font-size: 11px;
+    text-align: center;
+    color: #a5a5a5;
+}
+
+.wavescontainer .time h5{
+    font-size: 25px;
+    margin-top: -16;
+}
+
+.wavescontainer button{
+    cursor: pointer;
+    padding: 15px 25px;
+    background: linear-gradient(0deg, #ae2c86, #d0498d);
+    border-radius: 30px;
+    color: var(--color-1);
+    font-size: 13px;
+    font-weight: 700;
+    transition: .3s linear;
+    margin-top: 30px;
+}
+
+.wavescontainer button:hover{
+    background: linear-gradient(0deg, #d0498d, #ae2c86);
+}
+
+.appwrapper{
+    background: var(--color-5);
+    height: 60vh;
+}
+.app{
+    flex-wrap: wrap;
+   
+    width: 70%;
+    margin: auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 100%;
+}
+.app_content h1{
+    font-size: 30px;
+    text-align: left;
+    position: relative;
+}
+
+.app .app_content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 4rem;
+    color: var(--color-1);
+    flex-wrap:nowrap;
+}
+
+.app_content, .app_img{
+    flex: 1;
+}
+
+.app .app_content h1::before{
+    content: "";
+    position: absolute;
+    width: 50px;
+    height: 3.5px;
+    background: var(--color-6);
+    bottom: -10px;
+    left: 1px;
+
+}
+.converter{position: relative;
+    width: 100%;
+    height: auto;
+   padding-bottom: 50px;
+   
+}
+
+
+.converter::before{
+    content: " ";
+    position: absolute;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    background: url(img/crypto\ bg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+
+}
+.converter h1{
+    position: relative;
+    font-size: 25px;
+    color: var(--color-1);
+    text-align: center;
+  
+    padding-top: 50px;
+   
+}
+.converter h1::before{
+    content: " ";
+    position: absolute;
+    width: 50px;
+    height: 3.5px;
+    background: var(--color-6);
+    text-align: center;
+    left: 48%;
+    bottom: -15px;
+    border-radius: 10px;
+   
+}
+
+
+.converter .cards{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    margin-top: 100px;
+
+}
+
+.converter .cards .card2{
+    width: 50px;
+    height: 50px;
+    margin: 0 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    background: var(--color-6);
+    color: var(--color-1);
+}
+    
+
+.converter .cards .card::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #00002c80;
+    z-index: -1;
+    border-radius: 10px;
+}
+
+.converter .cards .card{
+    position: relative;
+    width: 380px;
+    height:  210px;
+   
+}
+
+.card2 i {
+    font-size: 2rem;
+}
+
+
+.converter .cards .card .select{
+    display: flex;
+    align-items: center;
+    color: var(--color-1);
+    margin: 30px 20px 0px 30px;
+}
+.converter .cards .card .select h4{
+   font-size: 20px;
+   width: 50px;
+   height: 50px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   background: var(--color-6);
+   border-radius: 50%;
+   box-shadow: 0px 0px 20px var(--color-7);
+
+}
+.converter .cards .card .select .select1{
+
+    margin-left: 20px;
+}
+
+.converter .cards .card .select .select1 h4{
+    color: var(--color-2);
+
+
+}
+
+.converter .cards .card .select .select1 select {
+    width: 250px;
+    border: 0;
+    background: transparent;
+    outline: 0;
+    color: var(--color-1);
+    font-family: "poppins", sans-serif;
+    font-weight: 900;
+    font-size: 18px;
+
+}
+.converter .cards .card .enter_bitcoin {
+   margin: 40px 40px 5px 40px;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   border-bottom: 2px solid rgb(205, 63, 89);
+   color: var(--color-1);
+}
+
+.converter .cards .card .enter_bitcoin input{
+    border: none;
+    outline: none;
+    background: transparent;
+    color: var(--color-1);
+    font-size: 25px;
+    font-weight: ;
+}
+.converter .cards .card p{
+    margin: 0px 40px;
+    font-size: 12px;
+    color: var(--color-1);
+}
+
+
+.rocket{
+    position: relative;
+    width: 100%;
+    height: auto;
+    background: url(img/rocket_bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+   
+}
+
+.rwrapper{
+    width: 80%;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap:
+}
+
+.rocket .rocket_content, 
+.rocket_img{
+    width: ;
+    height: auto;
+    color: var(--color-1);
+}
+.rocket .rocket_content{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    gap: 5rem;
+    max-width: 450px;
+}
+
+
+.rocket .rocket_content h1{
+    position: relative;
+    font-size: 25px;
+    line-height: 40px;
+    margin-top: 50px;
+}
+
+
+
+.rocket .rocket_content h1::before{
+    content: "";
+    position: absolute;
+    width: 50px;
+    height: 3.5px;
+    background: var(--color-6);
+    bottom: -20px;
+    left: 0%;
+    border-radius: 10px;
+}
+
+
+.rocket .rocket_content .content p{
+    margin-top: 60px;
+    font-size: 12px;
+    word-break: break-all;
+}
+
+
+.rocket .rocket_content ul{
+    list-style: none;
+    display: flex;
+    margin-top: 20px;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.rocket .rocket_content ul li {
+    position :relative;
+    width: 200px;
+    font-size: 12px;
+    margin: 3px 0px;
+    padding-left: 20px;
+}
+
+.rocket .rocket_content ul li::before{
+    content: "";
+    position: absolute;
+    width: 5px;
+    height: 5px;
+    background: #d0498d;
+    border-radius: 50%;
+    left: 0;
+    top: 8px;
+}
+.rocket .rocket_content button{
+   padding: 12px 25px;
+   background: linear-gradient(0deg, #ae2c86, #d0498d);
+   border-radius: 30px;
+   color: var(--color-1);
+   font-size: 11px;
+   font-weight: 700;
+   margin: 40px 0px 30px 0px;
+   cursor: pointer;
+   transition: .3s linear;
+}
+
+.rocket .rocket_content button:hover {
+    background: linear-gradient(0deg, #d0498d, #ae2c86);
+}
+
+
+/* .rocket .rocket_img{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+ */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* responsivness abd media queries */
+@media (max-width:991px){
+    .navbar{
+        flex-direction: column;
+    }
+    html{
+        font-size: 55%;
+    }
+    
+    .header{
+        padding: 2rem;
+    }
+
+    .home .image img{
+        width: 100%;
+    }
+    .wavestexts{
+        flex-wrap: wrap;
+    }
+    .appwrapper{
+        height: 100%;
+    }
+    .app{
+        height:100vh;
+        
+    }
+    /* .app_img{
+
+        margin-left: 15rem;
+        overflow-x: hidden;
+    } */
+
+    .rwrapper{
+        justify-content: center;
+        align-items: center;
+
+        padding: 4rem;
+    }
+    
+}
+
+
+
+
+
+@media (max-width:990px){
+    #menu-btn{
+display: initial;
+    }
+    .header .navbar{
+        position: absolute;
+        top: 115% ;
+        right: 2rem;
+        border-radius: .5rem;
+        box-shadow: var(--box-shadow);
+        width:30rem;
+        border: var(--border);
+        background: var(--color-4);
+        transform: scale(0);
+        opacity:0;
+        transform-origin: top right;
+        transition: none;
+    }
+    .header .navbar.active{
+        transform: scale(1);
+        opacity:1;
+        transform-origin: top right;
+        transition: .2s ease-out;
+    }
+    .header .navbar a{
+        font-size: 2rem;
+        display: block;
+        margin: 2.5rem;
+    }
+   .cards{
+    display: flex;
+    flex-direction: column;
+   }
+   .rwrapper{
+    margin: none;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+   
+    
+   }
+}
+.rocket_content{
+    
+}
+
+@media (max-width:450px){
+    html{
+        font-size: 50%;
+    }
+
+   
+    
+}
+
+
+/* responsivness abd media queries */
